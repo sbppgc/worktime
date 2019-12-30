@@ -17,6 +17,7 @@ config
 db
 src
 tests
+vendor
 .htaccess
 composer.json
 index.php
