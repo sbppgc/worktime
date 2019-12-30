@@ -1,8 +1,8 @@
-#Worktime
+# Worktime
 
 A service for getting user shedule, in accordance with the working calendar, holidays and internal breaks in the work of the organization.
 
-**This is a test task. It's not intended for use as a real service, and will not be supported.(bold)**
+**This is a test task. It's not intended for use as a real service, and will not be supported. (bold)**
 
 ## Requirements
 
@@ -10,7 +10,7 @@ PHP 7.1+, MySQL, Composer
 
 ## Installation
 
-1. Download files and place in site root directory. You should get this list in the root folder:
+1. Download files and place in site root directory. You should get this list in the site root folder:
 
 ```
 config
@@ -46,10 +46,10 @@ composer install
 
 
 
-It's all, service ready
+It's all, service ready. Now, we can use `shedule` endpoint.
 
 
-### Use
+## Use
 
 Open URL like https://your.domain/shedule?startDate=2018-01-01&endDate=2018-01-14&userId=1
 
@@ -57,13 +57,13 @@ startDate - First day of period, string date in 'Y-m-d' format.
 endDate - Last day of period, string date in 'Y-m-d' format.
 userId - User id, integer.
 
-### Run tests
+## Run tests
 
 The `schedule` endpoint test verifies the service in a complex, and requires a live database with specific test data.
 
 1. Prepare test database:
 
-Create new empty database and load to it this a dump from file `tests/db_data/test_db_data.sql`.
+Create new empty database and load to it this dump file: `tests/db_data/test_db_data.sql`
 
 2. Set up database connection preferences (`host`, `username`, `password`, `db`) in file `tests/configs/test_shedule_endpoint_config.php`, into `db` section.
 
