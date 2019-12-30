@@ -80,8 +80,8 @@ class SheduleEndpointController extends EndpointController
      */
     protected function getRequestParams(): array
     {
-        $startDate = $this->aRequest['startDate'];
-        $endDate = $this->aRequest['endDate'];
+        $startDate = trim($this->aRequest['startDate']);
+        $endDate = trim($this->aRequest['endDate']);
         if (!$this->isValidDate($startDate)) {
             throw new \Exception('Date value in startDate is invalid: \'' . $startDate . '\'');
         }

@@ -43,19 +43,27 @@ index.php
 composer install
 
 5. Open URL: https://your.domain/update_rest_days . Rest days will be received and saved to local DB.
-
-
+If working calendar successfully loaded, you see this response:
+```
+{
+    "code": 0,
+    "msg": "Rest days list updated"
+}
+```
 
 It's all, service ready. Now, we can use `shedule` endpoint.
 
 
 ## Use
 
-Open URL like https://your.domain/shedule?startDate=2018-01-01&endDate=2018-01-14&userId=1
+To get user shedule, use endpoint `shedule` with GET params `startDate`, `endDate` and userId.
 
 startDate - First day of period, string date in 'Y-m-d' format.
 endDate - Last day of period, string date in 'Y-m-d' format.
 userId - User id, integer.
+
+Full URL example: https://your.domain/shedule?startDate=2019-01-01&endDate=2019-01-14&userId=1
+
 
 ## Run tests
 
