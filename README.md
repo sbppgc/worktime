@@ -41,7 +41,9 @@ index.php
 
 5. Install dependences by composer. To do this, run this command in site root folder:
 
+```
 composer install
+```
 
 5. Open URL: https://your.domain/update_rest_days . Rest days will be received and saved to local DB.
 If working calendar successfully loaded, you see this response:
